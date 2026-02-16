@@ -18,7 +18,19 @@ export default defineConfig({
         })
       );
 
+<<<<<<< HEAD
       // JSON output is configured in package.json
+=======
+    /*  config.env.cucumberJson = {
+        generate: true,
+        output: "cypress/cucumber-json/results.json",
+      }; */
+
+        // Enable message output
+  config.env.CUCUMBER_MESSAGES_ENABLED = true;
+  config.env.CUCUMBER_MESSAGES_OUTPUT = "cypress/reports/messages.ndjson";
+
+>>>>>>> 10656d9bf783d89be09ebdaf739411511d9cdd4e
       return config;
     },
     

@@ -5,5 +5,9 @@ cypress/downloads/
 cypress/cache/
 cypress/results/
 cypress/cucumber-json/
+<<<<<<< HEAD
 package-lock.json 
 cypress/reports/
+=======
+package-lock.json 
+>>>>>>> 10656d9bf783d89be09ebdaf739411511d9cdd4e

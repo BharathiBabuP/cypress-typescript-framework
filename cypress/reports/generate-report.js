@@ -5,6 +5,7 @@ const path = require('path');
 const reportOutputDir = './cypress/reports/html';
 const jsonOutputDir = './cypress/cucumber-json';
 
+<<<<<<< HEAD
 // Check if JSON directory exists and has files
 if (!fs.existsSync(jsonOutputDir)) {
   console.error(`Error: JSON directory not found at ${jsonOutputDir}`);
@@ -21,6 +22,8 @@ if (jsonFiles.length === 0) {
 
 console.log(`Found ${jsonFiles.length} JSON file(s) to process`);
 
+=======
+>>>>>>> 10656d9bf783d89be09ebdaf739411511d9cdd4e
 async function generateReport() {
   await fs.ensureDir(reportOutputDir);
 
@@ -29,6 +32,7 @@ async function generateReport() {
     reportPath: reportOutputDir,
     metadata: {
       browser: {
+<<<<<<< HEAD
         name: 'chrome',
         version: '120'
       },
@@ -48,6 +52,16 @@ async function generateReport() {
   });
 
   console.log(`✓ HTML report generated successfully at ${reportOutputDir}/index.html`);
+=======
+        name: 'chrome'
+      },
+      device: 'Local test machine',
+      platform: {
+        name: 'Mac'
+      },
+    },
+  });
+>>>>>>> 10656d9bf783d89be09ebdaf739411511d9cdd4e
 }
 
 generateReport();

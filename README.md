@@ -5,6 +5,7 @@ Project Overview:
 
 This project is a Cypress automation framework using TypeScript and Cucumber for Behavior-Driven Development (BDD). It includes support for generating detailed HTML reports with multiple-cucumber-html-reporter.
 
+<<<<<<< HEAD
 **Key Features:**
 - BDD approach using Cucumber (Gherkin syntax)
 - TypeScript for type safety
@@ -23,11 +24,16 @@ This project is a Cypress automation framework using TypeScript and Cucumber for
 **PreRequisites:**
 - Node.js (latest LTS version recommended)
 - npm or yarn package manager
+=======
+**PreRequisites:**
+--> install Node latest version
+>>>>>>> 10656d9bf783d89be09ebdaf739411511d9cdd4e
 
 **Installation & Setup**
 
 1️⃣ **Clone the Repository**
 
+<<<<<<< HEAD
 ```bash
 git clone https://github.com/harveyspecter007/cypress-typescript-cucumber.git
 cd cypress_typescript
@@ -52,10 +58,20 @@ cypress/
 │   └── html/              # HTML reports (auto-generated)
 └── support/               # Support files and custom commands
 ```
+=======
+git clone https://github.com/harveyspecter007/cypress-typescript-cucumber.git
+
+cd cypress_typescript
+
+2️⃣ **Install Dependencies**
+
+npm install
+>>>>>>> 10656d9bf783d89be09ebdaf739411511d9cdd4e
 
 Running Tests:
 --------------
 
+<<<<<<< HEAD
 **Interactive Mode (Cypress Test Runner)**
 
 ```bash
@@ -89,10 +105,20 @@ Executes only scenarios tagged with @Test.
 node run-parallel.js
 ```
 Runs feature files in parallel for faster execution.
+=======
+Run Cypress in Interactive Mode
+
+  **npm run cypress:open**
+
+Run Cypress in Headless Mode
+
+  **npm run cypress:run**
+>>>>>>> 10656d9bf783d89be09ebdaf739411511d9cdd4e
 
 Generating HTML Reports:
 -----------------------
 
+<<<<<<< HEAD
 **Step 1: Run Tests**
 
 ```bash
@@ -196,4 +222,23 @@ export default class LoginPage {
 -----------
 
 ISC
+=======
+1️) Run Cypress Tests
+
+Ensure test execution generates JSON reports.
+
+  **npm run cypress:run**
+
+2️) Generate HTML Report
+
+  **npm run generate-report**
+
+3) Run Tests in parallel (Feature File wise)
+
+  **node run-parallel.js**
+
+4) Run Tests based on Cucumber Tags
+
+  **npx cypress run --env tags="@Test"**
+>>>>>>> 10656d9bf783d89be09ebdaf739411511d9cdd4e
 

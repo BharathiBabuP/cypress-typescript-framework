@@ -24,10 +24,14 @@
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
+<<<<<<< HEAD
     "stepDefinitions": "cypress/e2e/step_definitions/*.ts",
     "json": {
       "enabled": true,
       "output": "cypress/cucumber-json/results.json"
     }
+=======
+    "stepDefinitions": "cypress/e2e/step_definitions/*.ts"
+>>>>>>> 10656d9bf783d89be09ebdaf739411511d9cdd4e
   }
 }
